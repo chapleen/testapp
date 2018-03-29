@@ -6,6 +6,6 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^new-store', views.newStore),
     url(r'^new-product', views.newProduct),
-    url(r'^export-xlsx', views.index),
+    url(r'^export-xlsx', views.export_xlsx),
     url(r'^edit-in-excel', views.index)
 ]
