@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    font-size: 20px;
+}
+#menu {
+    margin:
+    width: 15%;
+    height: 100%;
+    position: fixed;
+}
+#content {
+    width: 83%;
+    height: auto;
+    position: absolute;
+    right: 0;
+}

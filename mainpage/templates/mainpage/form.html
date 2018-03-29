@@ -1,0 +1,17 @@
+{% extends "mainpage/base.html" %}
+
+{% block content %}
+<p>Adding new {{ formType }}</p>
+<form action="" method="post">{% csrf_token %}
+    {{form.as_p}}
+    <div>
+        <button type="submit">Send</button>
+
+    </div>
+    <div>
+        {% if dataSaved == True %}
+            <p>New {{formType}} added.</p>
+        {% endif %}
+    </div>
+</form>
+{% endblock %}

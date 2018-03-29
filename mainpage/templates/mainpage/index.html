@@ -1,0 +1,19 @@
+{% extends "mainpage/base.html" %}
+
+{% block content %}
+<p>STORE LIST</p>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th></th>
+    </tr>
+    {% for store in stores %}
+        <tr>
+            <td>{{store.name}}</td>
+            <td>{{store.address}}</td>
+            <td></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

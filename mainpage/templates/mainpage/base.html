@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'mainpage/styles.css' %}">
+    <title>Test application</title>
+</head>
+<body>
+
+<div id="menu">
+    <p><a href="/" class="active">Home</a></p>
+    <p><a href="new-store">New Store</a></p>
+    <p><a href="new-product">New Product</a></p>
+    <p><a href="export-xlsx">Export to Excel</a></p>
+    <p><a href="edit-in-excel">Edit in Excel</a></p>
+</div>
+
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>
